@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+      <title>OrgdrArchive</title>
+     </head>
+     <body onload="initApplet('30*t','40*t-5*t*t')" onunload="">
+     <div id="applet">
+	      <applet width="260" height="160" code="dataGraph.DataGraph.class" codebase="https://www.compadre.org/Physlets/resources/" archive="Physlets.jar" name="DataGraph1">
+		      <param name="showControls" value="false">
+			    <param name="permissions" value="sandbox">
+	      </applet>
+	        <applet width="260" height="160" code="dataGraph.DataGraph.class" codebase="https://www.compadre.org/Physlets/resources/" archive="Physlets.jar" name="DataGraph2">
+		      <param name="showControls" value="false">
+			    <param name="permissions" value="sandbox">
+	      </applet>
+	      <br>
+	      <applet width="526" height="230" code="animator4.Animator.class" codebase="https://www.compadre.org/Physlets/resources/" archive="Physlets.jar" name="Animator">
+		      <param name="FPS" value="10">
+		      <param name="dt" value="0.1">
+		      <param name="showControls" value="false">
+			    <param name="permissions" value="sandbox">
+	      </applet>
+      </div>
+      <div id="controls">
+	      <form>
+		      <input type="button" value="Play" onclick="document.Animator.forward()" class="play" title="Play">
+		      <input type="button" value="Pause" onclick="document.Animator.pause()" class="pause" title="Pause">
+		      <input type="button" value="Step »" onclick="document.Animator.stepForward()" class="step" title="Step Forward">
+		      <input type="button" value="Reset" onclick="document.Animator.reset()" class="reset" title="Reset">
+	      </form>
+      </div>
+      <p>
+        <a href="javascript:showAccelerationVector=true;showVelocityVector=true;initApplet('30*t','40*t-5*t*t')">Click here</a>
+        to view the velocity and acceleration vectors.
+       </p>
+       <p class="pcredit">Illustration authored by Aaron Titus with support by the National Science Foundation under Grant No. DUE-9952323 and placed in the public domain.</p>
